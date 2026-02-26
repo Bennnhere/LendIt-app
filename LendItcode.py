@@ -11,7 +11,7 @@ st.markdown("""
     .stButton>button { width: 100%; border-radius: 10px; height: 3em; }
     .stMetric { background-color: #f0f2f6; padding: 15px; border-radius: 10px; }
     </style>
-    """, unsafe_allow_value=True)
+    """, unsafe_allow_html=True)
 
 # --- MOCK DATABASE (Stored in Session State) ---
 if 'items' not in st.session_state:
@@ -107,3 +107,4 @@ with tab3:
     else:
         st.write("No active transactions.")
         st.image("https://cdn-icons-png.flaticon.com/512/4076/4076432.png", width=100)
+
